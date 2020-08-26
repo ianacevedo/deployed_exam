@@ -1,0 +1,25 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Gender</th>
+            <th>Average Points</th>
+            <th>Team</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let player of players">
+            <td>{{player.name}}</td>
+            <td>{{player.city}}</td>
+            <td>{{player.gender}}</td>
+            <td>{{player.avgPts}}</td>
+            <td>{{player.team}}</td>
+            <td>
+              <a href="view/{{ player.id}}" class="btn btn-success">View</a>
+              <button class="btn btn-danger" (click)="delPlayer(player.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

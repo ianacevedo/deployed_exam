@@ -1,0 +1,52 @@
+<div class="container">
+  <h1>Edit Player</h1>
+  <form [formGroup]="playerForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <label>Name</label>
+      <input class="form-control" formControlName="name" placeholder="Name" />
+    </div>
+      <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+        <div *ngIf="f.name.errors.required">Name is required</div>
+      </div>
+    <div class="row">
+      <label>City</label>
+      <input class="form-control" formControlName="city" placeholder="City" />
+      <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+        <div *ngIf="f.city.errors.required">City is required</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label for="genderSelect">Gender</label>
+        <select class="form-control" formControlName="gender" id="genderSelect">
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+      <div *ngIf="submitted && f.gender.errors" class="invalid-feedback">
+        <div *ngIf="f.gender.errors.required">Gender is required</div>
+      </div>
+    </div>
+    <div class="row">
+      <label>Average Points</label>
+      <input class="form-control" type="number" formControlName="avgPts" placeholder="0.0" />
+      <div *ngIf="submitted && f.avgPts.errors" class="invalid-feedback">
+        <div *ngIf="f.avgPts.errors.required">Average Points is required</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label>Team</label>
+        <input class="form-control" formControlName="team" placeholder="Team" />
+        <div *ngIf="submitted && f.team.errors" class="invalid-feedback">
+          <div *ngIf="f.team.errors.required">Team is required</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <a href="list" class="btn btn-warning"><< Back</a>
+      <button class="btn btn-success" type="submit">Save</button>
+      <button class="btn btn-secondary" type="reset">Reset</button>
+    </div>
+  </form>
+</div>

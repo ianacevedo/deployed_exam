@@ -1,0 +1,36 @@
+{
+  "players": [
+    {
+      "name": "Lebron James",
+      "city": "Los Angeles",
+      "gender": "Male",
+      "avgPts": 26.8,
+      "team": "Lakers24",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "James Harden",
+      "city": "Houston",
+      "gender": "Male",
+      "avgPts": 30,
+      "team": "Rockets"
+    },
+    {
+      "id": 3,
+      "name": "Giannis",
+      "city": "Milwaukee",
+      "gender": "Male",
+      "avgPts": 28.5,
+      "team": "Bucks"
+    },
+    {
+      "name": "Karl Acevedo",
+      "city": "manila23  ",
+      "gender": "Male",
+      "avgPts": "30",
+      "team": "Blades",
+      "id": 4
+    }
+  ]
+}
