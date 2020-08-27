@@ -1,0 +1,1 @@
+This is a Single Page Application from scratch.
